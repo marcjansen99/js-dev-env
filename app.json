@@ -1,0 +1,6 @@
+{
+  "name": "Node API example",
+  "description": "blabla",
+  "repository": "https://github.com/marcjansen99/js-dev-env",
+  "keywords": ["node", "express", "static"]
+}

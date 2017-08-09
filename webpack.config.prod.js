@@ -30,7 +30,6 @@ export default {
     // creates HTML file that includes reference to bundled JS
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -42,7 +41,9 @@ export default {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true
-      }
+      },
+      inject: true,
+      trackJSToken: '6a0aaacf74b0412e927e7f109c84e617'
     }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin()
